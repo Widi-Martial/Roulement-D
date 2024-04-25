@@ -9,11 +9,11 @@ body {
 }
 
 #player {
-  background-color: #f39c12;
+  background-color: #024714;
 }
 
 #dealer {
-  background-color: #e67e22;
+  background-color: #5a0202;
 }
 
 .board {
@@ -31,4 +31,6 @@ body {
   width: 100px;
   height: 100px;
   margin: 1em;
+  background-position: -500px;
 }
+
