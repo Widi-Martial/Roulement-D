@@ -34,3 +34,11 @@ body {
   background-position: -500px;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding: 1rem, auto;
+}
