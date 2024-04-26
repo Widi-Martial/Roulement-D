@@ -1,16 +1,13 @@
-//Creer une <div> avec la classe "dice"
-//Creer une fonction qui contient les instructions pour la création de dés (reprendre les instruction précédente)
-function createDice(){
+createForm();
+
+function createDice(gamers){
 const divDice = document.createElement("div");
 divDice.classList.add("dice");
-const divPlayer = document.querySelector("#player");
+const divPlayer = document.querySelector(gamers);
 divPlayer.appendChild(divDice);
 
-
 }
-createForm();
-//créer une fonction qui génere un nombre aléatoire entre 1 et 6
-//le nombre tiré sert a modifier la position du dés afin de faire apparaitre la bonne face =>chaque face fait '100px'
+
 function randomNumber(min,max) {
    const divDice = document.querySelectorAll(".dice");
    for ( let i = 0; i < divDice.length;i++) {
@@ -19,10 +16,7 @@ function randomNumber(min,max) {
    divDice[i].style.backgroundPosition = `-${diceSizeMove}px`;
 }
 }
-//randomNumber(1,6);
 
-//Demander à l'utilisateur combien de dés il souhaite avoir au lancement de la
-//Utiliser un formulaire pour la demande de dés 
 function createForm() {
 const bodyGame = document.querySelector("body");
 const divApp = document.querySelector("#app");
@@ -60,16 +54,14 @@ formDiceRequest.appendChild(reloadButton);//mise bouton rafraichir dans le formu
 
 }
 
-
-//obtenir la valeur de randomNumber, 
-
 const buttonForm = document.getElementById("inputButton");
 buttonForm.addEventListener("click", function(event){
      event.preventDefault();
    const inputName = (document.getElementById("inputName"));
    const NbUserDice = parseInt(inputName.value);
    for (let i = 0; i < NbUserDice;i++) {
-      createDice();
+      createDice('#player');
+      createDice('#dealer');
      }   
 });
 
@@ -82,9 +74,6 @@ diceButton.addEventListener("click", function(event){
    
    
 
-//La fonction se lance autant de fois que de dés demandés par l'user
-
-
-//Bonus : Créer une div après la div.player, mettre la classe .board et l'id #player (possible de faire en html)
+//Bonus : Créer une div après la div.player, mettre la classe .board et l'id #dealer (possible de faire en html)
 //chaque zone doit prendre la moitié de l'écran
 //Ajouter a la fonction de création de dés un parametre pour récupéré l'id player ou l'id dealer
