@@ -27,7 +27,7 @@ const formDiceRequest = document.createElement("form"); // creation du formulair
 const diceButton = document.createElement("input");//creation button lancer dés
 diceButton.id = "diceButton";
 diceButton.type = "submit";
-diceButton.value = "Dés";
+diceButton.value = "Roll";
 
 const inputForm = document.createElement("input");//création des inputs
 inputForm.id = "inputName";
@@ -43,7 +43,7 @@ buttonForm.value = "Valider";
 const reloadButton = document.createElement("input");
 reloadButton.id = "refresh";
 reloadButton.type = "submit";
-reloadButton.value = "rafraichir";
+reloadButton.value = "Rafraichir";
 
 bodyGame.insertBefore(fieldDiceRequest, divApp); // mise du header dans le body avant la div "#app"
 fieldDiceRequest.appendChild(formDiceRequest); //mise du formulaire dans le header

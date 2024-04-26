@@ -42,3 +42,45 @@ header {
 form {
   padding: 1rem, auto;
 }
+
+#inputButton {
+background: #f39c12;
+font-weight: bold ;
+color: white;
+border: 1px solid rgb(122, 35, 0);
+font-size: 1rem;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#refresh {
+  background: #cccbc9;
+  color: rgb(12, 9, 9);
+  border: 1px solid rgb(7, 7, 7);
+  font-size: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#diceButton {
+  background: #01f50e;
+  font-weight: bold ;
+  color: rgb(3, 3, 3);
+  border: 1px solid rgb(7, 7, 7);
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#inputName {
+  border: 1px solid rgb(158, 157, 157) ;
+  
+}
+
+form {
+  background-color: aliceblue;
+  border: #0a0808 solid 1px;
+  border-radius: 1rem;
+  padding:0.2rem;
+}
